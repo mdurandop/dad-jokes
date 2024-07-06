@@ -1,0 +1,52 @@
+@use './boilerplate' as *;
+
+.dad-joke-and-user-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.45em;
+
+    .dad-joke {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 0.8em;
+        margin: 1em 0;
+        
+        .dad-joke-message {
+            background-color: $dad-message-color;
+            padding: 0.55em 1em;
+            border-radius: 15px 15px 15px 0;
+        }
+    }
+
+    .user-request {
+        display: none   ;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 0.8em;
+        margin: 1em 0;
+
+        .user-message {
+            background-color: $user-message-color;
+            padding: 0.55em 1em;
+            border-radius: 15px 15px 0 15px
+        }
+    }
+}
+
+.tell-me-a-joke-btn {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0.5em 1em;
+    background-color: $dad-message-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 500ms;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $dad-message-color;
+        color: $dad-message-color;
+        transition: 800ms;
+    }
+}
