@@ -34,19 +34,22 @@
     }
 }
 
-.tell-me-a-joke-btn {
-    margin: 0 auto;
-    width: fit-content;
-    padding: 0.5em 1em;
-    background-color: $dad-message-color;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 500ms;
-    &:hover {
-        background-color: transparent;
-        border: 1px solid $dad-message-color;
-        color: $dad-message-color;
-        transition: 800ms;
+.div-button {
+    margin-bottom: 1em;
+    .tell-me-a-joke-btn {
+        margin: 0 auto;
+        width: fit-content;
+        padding: 0.5em 1em;
+        background-color: $dad-message-color;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 500ms;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $dad-message-color;
+            color: $dad-message-color;
+            transition: 800ms;
+        }
     }
 }
